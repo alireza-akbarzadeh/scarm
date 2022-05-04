@@ -1,0 +1,192 @@
+.App {
+  background-color: #fff;
+  width: 100%;
+  height: 90vh;
+  border-radius: 15px;
+  overflow-y: auto;
+}
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.Todo {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Todo_Head {
+  font-size: 32px;
+  color: #c0c0c0;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.Todo_Box {
+  width: 100%;
+  max-width: 600px;
+}
+.Todo_Box_Bar {
+  background-color: rgb(83, 56, 4);
+  padding: 5px 0;
+  width: 100%;
+}
+
+.Todo_Box_Body {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+.Todo_Box_Tasks input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #faf7f9;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+}
+.Todo_Box_Tasks input::placeholder {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+@media (max-width: 450px) {
+  .Todo_Box_Tasks input::placeholder {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
+
+.Todo_Box_Tasks {
+  height: 45px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #faf7f9;
+}
+
+.Todo_item {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.Del {
+  color: rgb(83, 56, 4);
+  font-size: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.Todo_item p {
+  padding-left: 10px;
+  line-height: 1.8rem;
+  font-size: 14px;
+}
+.Todo_item span {
+  padding-right: 10px;
+}
+
+/* Todo Footer */
+.Todo_Footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: 0 5px;
+  flex-wrap: wrap;
+}
+@media (max-width: 530px) {
+  .Todo_Footer {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+}
+
+.Todo_Sort,
+.Todo_Count {
+  display: inline-flex;
+  gap: 7px;
+}
+
+.Todo_Count_number {
+  color: #333;
+  font-weight: 700;
+}
+
+.Todo_Sort span {
+  cursor: pointer;
+}
+
+.Todo_Clear button {
+  cursor: pointer;
+  background-color: #c5c1c3;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 5px 4px;
+}
+.inline_Elelment {
+  gap: 7px;
+  display: inline-flex;
+  align-items: center;
+}
+.checkbox {
+  margin: 3px 0 0 6px;
+}
+
+.Completed_Todo {
+  opacity: 0.6;
+}
+.Completed_text {
+  text-decoration: line-through;
+}
+.input-control {
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+  resize: none;
+}
+
+.Todo_Box_Tasks form {
+  width: 100%;
+}
+
+.default_Btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.active {
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.Create_Todo {
+  padding: 15px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #333;
+}
+
+.Input_Active {
+  border: 1px solid #eaeaea;
+  padding: 8px 0 8px 7px;
+  background-color: #f9f9f9;
+  width: 80%;
+}

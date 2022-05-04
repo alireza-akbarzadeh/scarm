@@ -1,0 +1,88 @@
+{
+  "todos": [
+    {
+      "id": "8bfc2bca-0914-45a9-808a-9a9872ea81d7",
+      "edit": false,
+      "text": "Create Todo List For Snap ",
+      "Completed": true
+    },
+    {
+      "id": "39606d8f-7a06-48e7-8b60-2f2dd67f1a14",
+      "edit": false,
+      "text": "persist data Using Json Sever and run server and React app  with Npm start ",
+      "Completed": true
+    },
+    {
+      "text": "Server Side Todo List Using Next.js Or Nuxt.js",
+      "Completed": false,
+      "edit": false,
+      "id": "bcd9eca7-f85c-41ba-b10d-20fe393a997c"
+    },
+    {
+      "text": "Change the list of items so that you do not have too many items in the list.",
+      "Completed": true,
+      "edit": false,
+      "id": "cfd82c38-b3ed-40f3-9623-95d2b1ac87ec"
+    },
+    {
+      "id": "9ab7da48-668f-4db3-a907-48f372055b07",
+      "edit": false,
+      "text": "Write Test ",
+      "Completed": false
+    },
+    {
+      "text": "Create Todo List Using typescript",
+      "Completed": false,
+      "edit": false,
+      "id": "f25ced65-6f48-4e3f-808b-b714ce90d91b"
+    },
+    {
+      "text": "For mange Todo List Using Context Or Redux",
+      "Completed": true,
+      "edit": false,
+      "id": "d975b55a-bf8a-4ebc-9bba-a67cb0dfc933"
+    },
+    {
+      "text": "todo List Should Be Responsive",
+      "Completed": true,
+      "edit": false,
+      "id": "a9aef657-6077-44ea-a120-5f69ef3cc40d"
+    },
+    {
+      "text": "Filter changes should be applied to the url and the url filter should be updated as well.",
+      "Completed": true,
+      "edit": false,
+      "id": "c6f127fd-ff8b-4daf-9a97-88067bd7c1e8"
+    },
+    {
+      "text": "The two buttons All and Active apply a filter to the list and delete it. Normally, all items are displayed, and by pressing the Active button, only the list of unfinished to do is displayed.",
+      "Completed": true,
+      "edit": false,
+      "id": "05b18ed5-9a05-40b8-afb0-8e1bc1cb15a6"
+    },
+    {
+      "text": "To finish any item as desired, either use the checkbox and place it on the left side of each item or click on each item to do this.",
+      "Completed": true,
+      "edit": false,
+      "id": "c7531858-5e82-4703-895e-67d4a4477bb9"
+    },
+    {
+      "text": "Click the Delete button to remove any item from the list",
+      "Completed": true,
+      "edit": false,
+      "id": "dd01ec15-2501-4192-babf-836bba40fb3c"
+    },
+    {
+      "text": "By adding each item, a new item is added to the bottom of our to do list",
+      "Completed": true,
+      "edit": false,
+      "id": "8a7b6958-6adb-4f63-8296-06f2db736f33"
+    },
+    {
+      "text": "Do not use a specific library for styles and use only css, sass or...",
+      "Completed": true,
+      "edit": false,
+      "id": "abba0711-4af9-45b2-8558-6a5d64fb27be"
+    }
+  ]
+}
