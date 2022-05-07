@@ -84,5 +84,31 @@
       "edit": false,
       "id": "abba0711-4af9-45b2-8558-6a5d64fb27be"
     }
+  ],
+  "posts": [
+    {
+      "title": "React-query",
+      "id": 1,
+      "user_ID": 1,
+      "description": "This is Test 2"
+    },
+    {
+      "title": "React-redux",
+      "id": 2,
+      "user_ID": 2,
+      "description": "For state manment ......"
+    },
+    {
+      "title": "famer-motion",
+      "id": 3,
+      "user_ID": 3,
+      "description": "For animate things ...."
+    },
+    {
+      "title": "React-router-dom",
+      "id": 4,
+      "user_ID": 4,
+      "description": "For having muitiple Ruter an  Pages ...."
+    }
   ]
 }

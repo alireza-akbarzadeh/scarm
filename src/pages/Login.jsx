@@ -1,14 +1,11 @@
-import React from 'react';
-import {Head} from "../components";
-
+import React from "react";
+import { LoginContainer } from "../container";
 const Login = () => {
-    return (
-        <Head title="Dashboard | Todos">
-            <div>
-                Login
-            </div>
-        </Head>
-    );
+  return (
+    <div>
+      <LoginContainer />
+    </div>
+  );
 };
 
 export default Login;

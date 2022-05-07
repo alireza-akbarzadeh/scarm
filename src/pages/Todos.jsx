@@ -1,8 +1,11 @@
-import React from 'react';
-import {Todo} from "../components";
+import React from "react";
+import { Todo } from "../components";
+import usePost from "../Hook/usePost";
 
 const Todos = () => {
-    return <Todo/>
+  const post = usePost();
+
+  return <Todo />;
 };
 
 export default Todos;
