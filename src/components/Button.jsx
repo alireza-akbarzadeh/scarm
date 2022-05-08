@@ -1,19 +1,22 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
-
 const Button = ({
   txt,
+  txtColor,
   color,
   className,
   style,
   variant = "contained",
   fullWidth,
+  fontSize = "18px",
   disabled,
   startIcon,
   endIcon,
   rounded,
   width,
+  iconSize,
+  effect = true,
   href,
   size = "small",
   loading,
@@ -25,13 +28,35 @@ const Button = ({
     outline: none;
   `;
 
-  const type = eval(color);
+  const SameBG = css`
+    ${({ color, theme }) =>
+      color === "success"
+        ? theme.success
+        : color === "info"
+        ? theme.info
+        : color === "error"
+        ? theme.error
+        : color === "warning"
+        ? theme.warning
+        : color === "secondary"
+        ? theme.secondary
+        : color === "primary"
+        ? theme.primary
+        : color}
+  `;
 
   const BTN = styled(Tag)`
-    background-color: ${({ color, theme }) => (color ? color : theme.info)};
+    background-color: ${SameBG};
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    justify-content: center;
     border-radius: ${({ rounded }) => rounded && rounded};
     background-position: center;
     transition: background 0.8s;
+    color: ${({ txtColor, theme }) => (txtColor ? txtColor : theme.text)};
+    font-size: ${({ fontSize }) => fontSize};
+
     ${({ variant }) =>
       variant === "text"
         ? css`
@@ -69,14 +94,23 @@ const Button = ({
         ? "17px"
         : size};
 
-    &:hover {
-      background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%)
-        center/15000%;
-    }
-    &:active {
-      background-color: #6eb9f7;
-      background-size: 100%;
-      transition: background 0s;
+    ${({ effect }) =>
+      effect &&
+      css`
+        &:hover {
+          background: ${({ theme }) => theme.hover}
+            radial-gradient(circle, transparent 1%, ${SameBG} 1%) center/15000%;
+        }
+        &:active {
+          background-color: ${SameBG};
+          background-size: 100%;
+          transition: background 0s;
+        }
+      `}
+
+    & span,svg {
+      padding-top: "-10px";
+      font-size: ${({ iconSize }) => `${iconSize}px`};
     }
   `;
 
@@ -84,7 +118,10 @@ const Button = ({
     <BTN
       style={style}
       disabled={disabled}
+      effect={effect}
       color={color}
+      iconSize={iconSize}
+      txtColor={txtColor}
       size={size}
       fullWidth={fullWidth}
       width={width}
@@ -107,10 +144,14 @@ Button.propTypes = {
   txt: PropTypes.node.isRequired,
   variant: PropTypes.string,
   size: PropTypes.string,
+  fontSize: PropTypes.string,
+  iconSize: PropTypes.string,
   fullWidth: PropTypes.bool,
+  effect: PropTypes.bool,
   disabled: PropTypes.bool,
   loading: PropTypes.bool,
   color: PropTypes.string,
+  txtColor: PropTypes.string,
   rounded: PropTypes.string,
   startIcon: PropTypes.any,
   endIcon: PropTypes.any,

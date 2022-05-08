@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Path from "../../constant/Path";
 import { Button, Container, Input, Row, Typography } from "../../components";
 import { FormContainer } from "./register.styled.js";
+import { BsFillFilePersonFill } from "react-icons/bs";
+
 const LoginContainer = () => {
   return (
     <Container style={{ marginTop: 80 }} center={false} maxWidth="sm">
@@ -35,14 +37,44 @@ const LoginContainer = () => {
           </Link>
         </Typography>
         <Row>
-          <Input />
-          <Input />
+          <Input
+            icon={<BsFillFilePersonFill color="#9c9da2" fontSize={18} />}
+            label="first Name"
+            type="text"
+          />
+          <Input
+            type="text"
+            icon={<BsFillFilePersonFill color="#9c9da2" fontSize={18} />}
+            label="last Name"
+          />
         </Row>
-        <Input />
-        <Input />
-        <Row>
-          <Button txt="Change Method" />
-          {/* <Button txt="Create Account" /> */}
+        <Input
+          label="Email"
+          type="email"
+          icon={<BsFillFilePersonFill color="#9c9da2" fontSize={18} />}
+        />
+        <Input
+          label="password"
+          type="password"
+          icon={<BsFillFilePersonFill color="#9c9da2" fontSize={18} />}
+        />
+        <Row className="mt-15">
+          <Button
+            size="large"
+            rounded={"50px"}
+            fullWidth
+            txtColor="#d3e9fd"
+            color="#555b69"
+            txt="Change Method"
+          />
+          <Button
+            size="large"
+            fullWidth
+            rounded={"50px"}
+            txtColor="#d3e9fd"
+            color="secondary"
+            txt="Create Account"
+          />
         </Row>
       </FormContainer>
     </Container>

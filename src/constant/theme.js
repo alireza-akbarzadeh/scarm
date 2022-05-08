@@ -31,6 +31,7 @@ export const light = {
   border: "#deebf1",
   background: "#ffffff",
   body: "#f1f1f1",
+  hover: "rgba(255, 255, 255, 0.6)",
   text: "#121620",
 };
 export const dark = {
@@ -49,6 +50,7 @@ export const dark = {
   darkCyan: "#0b0c11",
   background: "#1f2023",
   border: "#303236",
+  hover: "rgba(255, 255, 255, 0.6)",
   body: "#121620",
   text: "#f1f1f1",
 };
