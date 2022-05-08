@@ -16,6 +16,10 @@ export const base = {
 export const light = {
   primary: "#1A429c",
   secondary: "#5195EA",
+  success: "#388e3c",
+  error: "#f44336",
+  info: "	#29b6f6",
+  warning: "#ffa726",
   blue_500: "#0449e9",
   blue_800: "#1b214a",
   blue_600: "#323645",
@@ -32,6 +36,10 @@ export const light = {
 export const dark = {
   primary: "#1A429c",
   secondary: "#5195EA",
+  success: "#388e3c",
+  error: "#d32f2f",
+  info: "	#29b6f6",
+  warning: "#f0ad4e",
   blue_500: "#0449e9",
   blue_800: "#1b214a",
   blue_900: "#282a37",

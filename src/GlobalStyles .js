@@ -20,6 +20,14 @@ const GlobalStyles = createGlobalStyle`
     overflow-x:hidden;
   }
 
+
+  .inline_element{
+  display:inline-flex;
+  gap:5px;
+
+    }
+
+
   ${[5, 10, 15, 20].map(
     (size) => css`
       ${["top", "right", "bottom", "left"].map(
@@ -42,7 +50,10 @@ ${[5, 10, 15, 20].map(
     `
     )}
   `
-)}
+)};
+
+
+
 
 `;
 

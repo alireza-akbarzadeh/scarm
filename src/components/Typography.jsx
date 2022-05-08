@@ -12,6 +12,7 @@ const Typography = ({
   fontFamily,
   textTransform,
   textDecoration,
+  letterSpacing,
   className,
   styles,
   ...rest
@@ -21,11 +22,12 @@ const Typography = ({
     color: ${({ color, theme }) => (color ? color : theme.text)};
     font-size: ${({ fontSize }) => fontSize};
     line-height: ${({ lineHeight }) => lineHeight};
-    font-style: ${({ lineHeight }) => lineHeight};
-    font-weight: ${({ lineHeight }) => lineHeight};
-    font-family: ${({ lineHeight }) => lineHeight};
-    text-transform: ${({ lineHeight }) => lineHeight};
-    text-decoration: ${({ lineHeight }) => lineHeight};
+    font-style: ${({ fontStyle }) => fontStyle};
+    font-weight: ${({ fontWeight }) => fontWeight};
+    font-family: ${({ fontFamily }) => fontFamily};
+    text-transform: ${({ textTransform }) => textTransform};
+    text-decoration: ${({ textDecoration }) => textDecoration};
+    letter-spacing: ${({ letterSpacing }) => letterSpacing};
   `;
   return (
     <Element
