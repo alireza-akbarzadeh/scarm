@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { base } from "../../constant/theme";
+import { Input } from "../../components";
 const FormContainer = styled.div`
   max-width: 500px;
   display: flex;
@@ -22,4 +22,19 @@ const FormContainer = styled.div`
   }
 `;
 
-export { FormContainer };
+const RegisterInput = styled(Input)`
+  input {
+    color: #faf8f9;
+    background-color: ${({ theme }) => theme.blue_800};
+  }
+  input:focus {
+    background: #3d404b;
+
+    &:focus + .label_Handler::before {
+      background: ${({ theme }) => theme.blue_800};
+      color: #fff;
+    }
+  }
+`;
+
+export { FormContainer, RegisterInput };

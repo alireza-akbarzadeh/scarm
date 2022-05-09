@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Path from "../../constant/Path";
-import { Button, Container, Input, Row, Typography } from "../../components";
-import { FormContainer } from "./register.styled.js";
-import { BsFillFilePersonFill } from "react-icons/bs";
+import { Button, Container, Row, Typography } from "../../components";
+import { FormContainer, RegisterInput } from "./register.styled.js";
+import { BsFillFilePersonFill, BsEye } from "react-icons/bs";
+import { HiOutlineMail } from "react-icons/hi";
 
 const LoginContainer = () => {
   return (
@@ -37,26 +38,26 @@ const LoginContainer = () => {
           </Link>
         </Typography>
         <Row>
-          <Input
+          <RegisterInput
             icon={<BsFillFilePersonFill color="#9c9da2" fontSize={18} />}
             label="first Name"
             type="text"
           />
-          <Input
+          <RegisterInput
             type="text"
             icon={<BsFillFilePersonFill color="#9c9da2" fontSize={18} />}
             label="last Name"
           />
         </Row>
-        <Input
+        <RegisterInput
           label="Email"
           type="email"
-          icon={<BsFillFilePersonFill color="#9c9da2" fontSize={18} />}
+          icon={<HiOutlineMail color="#9c9da2" fontSize={18} />}
         />
-        <Input
+        <RegisterInput
           label="password"
           type="password"
-          icon={<BsFillFilePersonFill color="#9c9da2" fontSize={18} />}
+          icon={<BsEye color="#9c9da2" fontSize={18} />}
         />
         <Row className="mt-15">
           <Button

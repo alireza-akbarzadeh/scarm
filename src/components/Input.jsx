@@ -10,18 +10,27 @@ const Input = ({
   inputClassName,
   type,
   label,
+  customeTextError,
+  isError = false,
   ...rest
 }) => {
   return (
     <FormControl dir={dir} style={style} className={className}>
       <BaseInput
+        isError={isError}
+        label={label}
         style={inputStyle}
         className={inputClassName}
         type={type}
         {...rest}
       />
-      <label className={"label_Handler"}>{label}</label>
+      <label className={"label_Handler"} />
       <span className={"Icon_Handler"}>{icon && icon}</span>
+      {isError && (
+        <Error>
+          {customeTextError ? customeTextError : "Field Is Required"}
+        </Error>
+      )}
     </FormControl>
   );
 };
@@ -69,43 +78,76 @@ const FormControl = styled.div`
   }
 `;
 
+const Error = styled.div`
+  color: ${({ theme }) => theme.error};
+  font-size: 16px;
+  @media (max-width: 600px) {
+    font-size: 13px;
+  }
+
+  display: block;
+  margin-top: 10px;
+  position: absolute;
+`;
 const BaseInput = styled.input`
   width: 100%;
   padding: 5px 15px;
   outline: none;
   height: 50px;
-  color: #faf8f9;
+  color: ${({ theme }) => theme.text};
   border-radius: 10px;
   padding: 0 15px;
   background-color: transparent;
   font-size: 16px;
   border: none;
-  background-color: ${({ theme }) => theme.blue_800};
+  background-color: ${({ theme }) => theme.body};
   font-weight: 600;
   transition: all 0.3 ease-in-out;
   &:focus {
-    box-shadow: 0px -1px 5px 1px #1a429c;
+    box-shadow: 0px 0px 0px 2px #1a429c;
     border: 1px solid ${({ theme }) => theme.secondary};
-    background-color: #323644;
+    background: ${({ theme }) => theme.body};
   }
 
   &:focus + .label_Handler {
     font-size: 13px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.35s ease-in-out;
     padding: 2px 5px;
-    transform: translate(10px, -30px) !important;
-    background: #323644;
+    transform: translate(10px, -37px) !important;
+  }
+  &:focus + .label_Handler::before {
+    content: ${(props) => JSON.stringify(props.label)};
+    display: block;
+    background: ${({ theme }) => theme.body};
+    text-align: center;
+    padding: 2px 3px;
+    position: absolute;
+    z-index: -1;
     color: ${({ theme }) => theme.text};
   }
+
+  & + .label_Handler::before {
+    content: ${({ label }) => JSON.stringify(label)};
+    display: block;
+  }
+
+  ${({ isError }) =>
+    isError &&
+    css`
+      border: 1.5px solid ${({ theme }) => theme.error} !important;
+      box-shadow: 0px 0px 0px 2px ${({ theme }) => theme.error} !important;
+    `}
 `;
 
 Input.propTypes = {
   type: PropTypes.string.isRequired,
   dir: PropTypes.string,
   icon: PropTypes.any,
+  isError: PropTypes.bool,
   style: PropTypes.string,
   label: PropTypes.string,
   className: PropTypes.string,
   inputStyle: PropTypes.string,
+  customeTextError: PropTypes.string,
   inputClassName: PropTypes.string,
 };
