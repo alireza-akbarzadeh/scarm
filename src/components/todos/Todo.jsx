@@ -9,7 +9,6 @@ import { ThemePreferenceContext } from "../../context/ThemeContext";
 const Todo = () => {
   const { inputTextHandler, inputText, submiTodoHandler } =
     useContext(AppContext);
-  const { toggleTheme } = useContext(ThemePreferenceContext);
 
   const inputRef = useRef(null);
   useEffect(() => {
@@ -18,7 +17,6 @@ const Todo = () => {
   return (
     <div className="App">
       <div className="container">
-        <button onClick={toggleTheme}>Toggle Theme</button>
         <div className="Todo">
           <h3 className="Todo_Head">Todo</h3>
           <div className="Todo_Box">

@@ -1,5 +1,5 @@
 const Home = "/";
-const Login = "/login";
-const Register = "/register";
+const Login = "/auth/login";
+const Register = "/auth/register";
 
 export default { Home, Login, Register };

@@ -2,28 +2,37 @@ import React from "react";
 // React Routes Dom
 import { useRoutes, Navigate } from "react-router-dom";
 // Layout
-import { DashboardLayout, LoginLayout } from "./layout";
+import { DashboardLayout, LoginLayout, DefaultDashboard } from "./layout";
 // Pages
-import { Login, NotFound, Register, Todos } from "./pages";
+import { Home, Login, NotFound, Register, Todos } from "./pages";
 
 const Router = () => {
   return useRoutes([
+    {
+      path: "/auth",
+      element: <LoginLayout />,
+      children: [
+        { path: "/auth", element: <Navigate to="/auth/login" /> },
+        { path: "login", element: <Login /> },
+        { path: "register", element: <Register /> },
+      ],
+    },
     {
       path: "/dashboard",
       element: <DashboardLayout />,
       children: [{ path: "todos", element: <Todos /> }],
     },
+
     {
       path: "/",
-      element: <LoginLayout />,
+      element: <DefaultDashboard />,
       children: [
-        { path: "/", element: <Navigate to="/login" /> },
-        { path: "login", element: <Login /> },
-        { path: "register", element: <Register /> },
+        { path: "/", element: <Home /> },
         { path: "404", element: <NotFound /> },
         { path: "*", element: <Navigate to="/404" /> },
       ],
     },
+
     { path: "*", element: <Navigate to="/404" replace /> },
   ]);
 };

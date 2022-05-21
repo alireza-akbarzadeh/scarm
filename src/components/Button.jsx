@@ -29,20 +29,7 @@ const Button = ({
   `;
 
   const SameBG = css`
-    ${({ color, theme }) =>
-      color === "success"
-        ? theme.success
-        : color === "info"
-        ? theme.info
-        : color === "error"
-        ? theme.error
-        : color === "warning"
-        ? theme.warning
-        : color === "secondary"
-        ? theme.secondary
-        : color === "primary"
-        ? theme.primary
-        : color}
+    ${({ color, theme }) => theme[color]}
   `;
 
   const BTN = styled(Tag)`

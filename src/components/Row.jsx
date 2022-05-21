@@ -13,7 +13,13 @@ const Row = ({
   ...rest
 }) => {
   return (
-    <Flex className={className} space={space} direction={direction} {...rest}>
+    <Flex
+      className={className}
+      space={space}
+      alignItems={alignItems}
+      direction={direction}
+      {...rest}
+    >
       {children}
     </Flex>
   );

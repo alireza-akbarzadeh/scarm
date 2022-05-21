@@ -39,6 +39,7 @@ export default Input;
 
 const FormControl = styled.div`
   margin: 5px 0;
+  padding: 5px 15px;
   position: relative;
   width: 100%;
   .label_Handler {
