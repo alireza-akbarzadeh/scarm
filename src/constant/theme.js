@@ -33,6 +33,7 @@ export const light = {
   body: "#f1f1f1",
   hover: "rgba(255, 255, 255, 0.6)",
   text: "#121620",
+  sidebar: "#Fafcfb",
 };
 export const dark = {
   primary: "#1A429c",
@@ -53,6 +54,7 @@ export const dark = {
   hover: "rgba(255, 255, 255, 0.6)",
   body: "#121620",
   text: "#f1f1f1",
+  sidebar: "#303236",
 };
 
 export const COLORS = {

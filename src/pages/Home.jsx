@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { Todo } from "../components";
-
+import Todos from "../features/Todos/TodosList";
 const Home = () => {
-  const [first, setFirst] = useState(undefined);
-
-  return <div>{first ?? <Todo />}</div>;
+  return (
+    <div style={{ height: "300vh" }}>
+      <Todos />
+    </div>
+  );
 };
 
 export default Home;

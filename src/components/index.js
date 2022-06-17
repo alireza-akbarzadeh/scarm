@@ -6,7 +6,7 @@ export { default as GlobalLoader } from "./GlobalLoader.jsx";
 export { default as Images } from "./Images";
 export { default as Menu } from "./Menu";
 export { default as Container } from "./Container";
-export { default as Button } from "./Button";
+export { default as Button } from "./button/Button";
 export { default as Input } from "./Input";
 export { default as Row } from "./Row";
 export { default as Typography } from "./Typography";

@@ -3,16 +3,9 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import AppProvider from "./context/AppContext";
 import { BrowserRouter } from "react-router-dom";
-import { QueryClientProvider, QueryClient } from "react-query";
+import { QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
-
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      staleTime: Infinity,
-    },
-  },
-});
+import queryClient from "./queryClient";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -23,7 +16,7 @@ root.render(
           <App />
         </AppProvider>
       </BrowserRouter>
-      <ReactQueryDevtools initialIsOpen={false} />
+      <ReactQueryDevtools initialIsOpen />
     </QueryClientProvider>
   </React.StrictMode>
 );

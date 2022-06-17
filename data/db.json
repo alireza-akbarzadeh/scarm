@@ -1,34 +1,10 @@
 {
   "todos": [
     {
-      "id": "8bfc2bca-0914-45a9-808a-9a9872ea81d7",
-      "edit": false,
-      "text": "Create Todo List For Snap ",
-      "Completed": true
-    },
-    {
-      "id": "39606d8f-7a06-48e7-8b60-2f2dd67f1a14",
-      "edit": false,
-      "text": "persist data Using Json Sever and run server and React app  with Npm start ",
-      "Completed": true
-    },
-    {
-      "text": "Server Side Todo List Using Next.js Or Nuxt.js",
-      "Completed": false,
-      "edit": false,
-      "id": "bcd9eca7-f85c-41ba-b10d-20fe393a997c"
-    },
-    {
       "text": "Change the list of items so that you do not have too many items in the list.",
       "Completed": true,
       "edit": false,
       "id": "cfd82c38-b3ed-40f3-9623-95d2b1ac87ec"
-    },
-    {
-      "id": "9ab7da48-668f-4db3-a907-48f372055b07",
-      "edit": false,
-      "text": "Write Test ",
-      "Completed": false
     },
     {
       "text": "Create Todo List Using typescript",
@@ -52,13 +28,8 @@
       "text": "Filter changes should be applied to the url and the url filter should be updated as well.",
       "Completed": true,
       "edit": false,
-      "id": "c6f127fd-ff8b-4daf-9a97-88067bd7c1e8"
-    },
-    {
-      "text": "The two buttons All and Active apply a filter to the list and delete it. Normally, all items are displayed, and by pressing the Active button, only the list of unfinished to do is displayed.",
-      "Completed": true,
-      "edit": false,
-      "id": "05b18ed5-9a05-40b8-afb0-8e1bc1cb15a6"
+      "id": "c6f127fd-ff8b-4daf-9a97-88067bd7c1e8",
+      "completed": true
     },
     {
       "text": "To finish any item as desired, either use the checkbox and place it on the left side of each item or click on each item to do this.",
@@ -83,6 +54,84 @@
       "Completed": true,
       "edit": false,
       "id": "abba0711-4af9-45b2-8558-6a5d64fb27be"
+    },
+    {
+      "id": 1,
+      "title": "test",
+      "completed": false,
+      "edit": false
+    },
+    {
+      "id": "13964f57-6ae4-4ef0-bcff-4e1cffecf00e",
+      "text": "this is test",
+      "completed": false,
+      "edit": false
+    },
+    {
+      "id": "069979f4-6ed0-47a8-9d71-d09b1a2c6d80",
+      "text": "this is test 2",
+      "completed": false,
+      "edit": false
+    },
+    {
+      "id": "a44ef299-f71d-4ec8-8855-9b5eaf1383c9",
+      "text": "this is test 3",
+      "completed": false,
+      "edit": false
+    },
+    {
+      "id": "ac2a3f01-5271-421c-9554-6a67a5ecf8dc",
+      "text": "boro mostafa",
+      "completed": false,
+      "edit": false
+    },
+    {
+      "id": "0011a58c-a48e-4d54-b3f2-fe44df08d008",
+      "text": "test 4",
+      "completed": false,
+      "edit": false
+    },
+    {
+      "id": "d577dfb2-b271-4ae7-b46e-70c1635eb3d3",
+      "text": "hey !!",
+      "completed": false,
+      "edit": false
+    },
+    {
+      "id": "928008c3-e0ef-4a77-85e2-6803013fdb38",
+      "text": "hey2 ",
+      "completed": false,
+      "edit": false
+    },
+    {
+      "id": "bcfcd483-0586-4a01-a0f2-9c05dde9fe06",
+      "text": "hey 3",
+      "completed": false,
+      "edit": false
+    },
+    {
+      "id": "e6dd2d9d-cef8-4832-946b-2436f8758fce",
+      "text": "hye 6",
+      "completed": false,
+      "edit": false
+    },
+    {
+      "id": "7edcdb97-ca1e-45fa-ae1c-7360289b532c",
+      "text": "ge6",
+      "completed": false,
+      "edit": false
+    },
+    {
+      "id": "aa2d5ead-5af2-4852-a014-aca0a8b99a62",
+      "text": "test 6",
+      "completed": false,
+      "edit": false
+    },
+    {
+      "id": "923e548c-1058-4a21-8910-f9132bedfb42",
+      "text": "test 78",
+      "completed": false,
+      "edit": false
     }
   ],
   "posts": [

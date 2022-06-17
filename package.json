@@ -27,8 +27,9 @@
     "start": "concurrently --kill-others \" react-scripts start \" \"json-server -p 3006 -w data/db.json\"",
     "server": "json-server -p 3006 -w data/db.json",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "jest",
+    "eject": "react-scripts eject",
+    "cypress:open": "cypress open"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +50,11 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^7.1.0"
+    "@cypress/react": "^5.12.5",
+    "@cypress/webpack-dev-server": "^1.8.4",
+    "concurrently": "^7.1.0",
+    "cypress": "^9.7.0",
+    "jest": "^28.1.0",
+    "webpack-dev-server": "^4.9.0"
   }
 }

@@ -1,7 +1,6 @@
 import React from "react";
-import { Todo } from "../components";
 import usePost from "../Hook/usePost";
-
+import Todo from "../features/Todos/TodosList";
 const Todos = () => {
   const post = usePost();
 

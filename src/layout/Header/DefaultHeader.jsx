@@ -9,16 +9,16 @@ import { CgProfile } from "react-icons/cg";
 import { RiMoonFill } from "react-icons/ri";
 import { ThemePreferenceContext } from "../../context/ThemeContext";
 import { Row } from "../../components";
+import { useMangeContext } from "../../context/ContextProvider";
 const DefaultHeader = () => {
   const { toggleTheme } = useContext(ThemePreferenceContext);
+  const { state, dispatch } = useMangeContext();
   return (
     <DefaultHeaderBG>
       <Row direction="row" space="13px" alignItems={"center"}>
-        <Tooltip label="Open Menu">
-          <IconHover>
-            <FiMenu />
-          </IconHover>
-        </Tooltip>
+        <IconHover onClick={() => dispatch({ type: "isSidebar" })}>
+          <FiMenu />
+        </IconHover>
         <IconHover>
           <FiHome />
         </IconHover>

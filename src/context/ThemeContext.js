@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import { ThemeProvider } from "styled-components";
 import { light, dark } from "../constant/theme";
 import GlobalStyles from "../GlobalStyles ";
+import { ContextProvider } from "./ContextProvider";
 
 export const ThemePreferenceContext = createContext();
 
@@ -30,7 +31,7 @@ const ThemeContext = ({ children }) => {
     <ThemePreferenceContext.Provider value={{ theme, setTheme, toggleTheme }}>
       <ThemeProvider theme={isDarkTheme ? dark : light}>
         <GlobalStyles />
-        {children}
+        <ContextProvider>{children}</ContextProvider>
       </ThemeProvider>
     </ThemePreferenceContext.Provider>
   );

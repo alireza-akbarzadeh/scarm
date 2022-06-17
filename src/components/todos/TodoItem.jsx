@@ -15,7 +15,9 @@ const TodoItem = () => {
   return (
     <>
       {filterTodo.length === 0 ? (
-        <div className="Todo_item Create_Todo">There is nothing todo</div>
+        <div data-testid="todo-item" className="Todo_item Create_Todo">
+          There is nothing todo
+        </div>
       ) : (
         filterTodo?.map((todo, index) => (
           <div
