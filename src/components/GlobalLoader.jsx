@@ -3,7 +3,6 @@ import { useIsFetching } from "react-query";
 
 const GlobalLoader = () => {
   const isFetching = useIsFetching();
-  console.log(isFetching, "isFetching");
   return (
     <div
       style={{

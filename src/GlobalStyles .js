@@ -12,8 +12,8 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: "Roboto", sans-serif;
-    background: ${({ theme }) => theme.body};
-    color: ${({ theme }) => theme.text};
+    background: ${({ theme }) => theme.colors.body};
+    color: ${({ theme }) => theme.colors.text};
     transition: background 0.2s ease-in, color 0.2s ease-in;
     height: 100%;
     width: 100%;
@@ -27,6 +27,17 @@ const GlobalStyles = createGlobalStyle`
 
     }
 
+
+.form_control{
+  width:100%;
+}
+.form_control input{
+  border:1px solid rgba(0,0,0,0.2);
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
 
   ${[5, 10, 15, 20].map(
     (size) => css`

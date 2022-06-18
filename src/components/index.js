@@ -12,3 +12,4 @@ export { default as Row } from "./Row";
 export { default as Typography } from "./Typography";
 export { default as ErrorFallback } from "./ErrorFallback";
 export { default as Tooltip } from "./Tooltip";
+export { default as BookList } from "./Books/BookList";

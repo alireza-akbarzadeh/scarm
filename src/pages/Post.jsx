@@ -6,10 +6,9 @@ const Post = ({ id, setPostId }) => {
 
   const cathPost = queryClient.getQueryData(["post", 1]);
 
-  console.log(cathPost, "wtf");
   return (
     <div>
-      <a href="" onClick={() => setPostId(null)}>
+      <a href='' onClick={() => setPostId(null)}>
         Back
       </a>
       <p>{data?.title}</p>

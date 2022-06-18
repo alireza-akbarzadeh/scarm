@@ -25,7 +25,7 @@ const Brand = styled.div`
 `;
 
 const DefaultHeaderBG = styled.div`
-  background-color: ${({ theme }) => theme.primary};
+  background-color: ${({ theme }) => theme.colors.primary};
   display: flex;
   padding: 13px 30px;
   justify-content: space-between;

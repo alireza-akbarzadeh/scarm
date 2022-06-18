@@ -1,0 +1,26 @@
+import { base } from "./common";
+export const light = {
+  ...base,
+  colors: {
+    primary: "#1A429c",
+    secondary: "#5195EA",
+    success: "#388e3c",
+    error: "#f44336",
+    info: "	#29b6f6",
+    warning: "#ffa726",
+    blue_500: "#0449e9",
+    blue_800: "#1b214a",
+    blue_600: "#323645",
+    gray_200: "#EDEDee",
+    gray_500: "#9c9da2",
+    gray_600: "#666b79",
+    gray_700: "#595b63",
+    darkCyan: "#0b0c11",
+    border: "#deebf1",
+    background: "#ffffff",
+    body: "#f1f1f1",
+    hover: "rgba(255, 255, 255, 0.6)",
+    text: "#121620",
+    sidebar: "#Fafcfb",
+  },
+};

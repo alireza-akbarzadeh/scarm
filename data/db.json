@@ -1,135 +1,14 @@
 {
   "todos": [
     {
-      "text": "Change the list of items so that you do not have too many items in the list.",
-      "Completed": true,
-      "edit": false,
-      "id": "cfd82c38-b3ed-40f3-9623-95d2b1ac87ec"
-    },
-    {
-      "text": "Create Todo List Using typescript",
-      "Completed": false,
-      "edit": false,
-      "id": "f25ced65-6f48-4e3f-808b-b714ce90d91b"
-    },
-    {
-      "text": "For mange Todo List Using Context Or Redux",
-      "Completed": true,
-      "edit": false,
-      "id": "d975b55a-bf8a-4ebc-9bba-a67cb0dfc933"
-    },
-    {
-      "text": "todo List Should Be Responsive",
-      "Completed": true,
-      "edit": false,
-      "id": "a9aef657-6077-44ea-a120-5f69ef3cc40d"
-    },
-    {
-      "text": "Filter changes should be applied to the url and the url filter should be updated as well.",
-      "Completed": true,
-      "edit": false,
-      "id": "c6f127fd-ff8b-4daf-9a97-88067bd7c1e8",
-      "completed": true
-    },
-    {
-      "text": "To finish any item as desired, either use the checkbox and place it on the left side of each item or click on each item to do this.",
-      "Completed": true,
-      "edit": false,
-      "id": "c7531858-5e82-4703-895e-67d4a4477bb9"
-    },
-    {
-      "text": "Click the Delete button to remove any item from the list",
-      "Completed": true,
-      "edit": false,
-      "id": "dd01ec15-2501-4192-babf-836bba40fb3c"
-    },
-    {
-      "text": "By adding each item, a new item is added to the bottom of our to do list",
-      "Completed": true,
-      "edit": false,
-      "id": "8a7b6958-6adb-4f63-8296-06f2db736f33"
-    },
-    {
-      "text": "Do not use a specific library for styles and use only css, sass or...",
-      "Completed": true,
-      "edit": false,
-      "id": "abba0711-4af9-45b2-8558-6a5d64fb27be"
-    },
-    {
-      "id": 1,
-      "title": "test",
+      "id": "b63eac50-c9f8-495a-ba5b-cf38118649b6",
+      "text": "git fix 321",
       "completed": false,
       "edit": false
     },
     {
-      "id": "13964f57-6ae4-4ef0-bcff-4e1cffecf00e",
-      "text": "this is test",
-      "completed": false,
-      "edit": false
-    },
-    {
-      "id": "069979f4-6ed0-47a8-9d71-d09b1a2c6d80",
-      "text": "this is test 2",
-      "completed": false,
-      "edit": false
-    },
-    {
-      "id": "a44ef299-f71d-4ec8-8855-9b5eaf1383c9",
-      "text": "this is test 3",
-      "completed": false,
-      "edit": false
-    },
-    {
-      "id": "ac2a3f01-5271-421c-9554-6a67a5ecf8dc",
-      "text": "boro mostafa",
-      "completed": false,
-      "edit": false
-    },
-    {
-      "id": "0011a58c-a48e-4d54-b3f2-fe44df08d008",
+      "id": "ed4e7ec9-e020-42b7-8a42-0f4223ebecbd",
       "text": "test 4",
-      "completed": false,
-      "edit": false
-    },
-    {
-      "id": "d577dfb2-b271-4ae7-b46e-70c1635eb3d3",
-      "text": "hey !!",
-      "completed": false,
-      "edit": false
-    },
-    {
-      "id": "928008c3-e0ef-4a77-85e2-6803013fdb38",
-      "text": "hey2 ",
-      "completed": false,
-      "edit": false
-    },
-    {
-      "id": "bcfcd483-0586-4a01-a0f2-9c05dde9fe06",
-      "text": "hey 3",
-      "completed": false,
-      "edit": false
-    },
-    {
-      "id": "e6dd2d9d-cef8-4832-946b-2436f8758fce",
-      "text": "hye 6",
-      "completed": false,
-      "edit": false
-    },
-    {
-      "id": "7edcdb97-ca1e-45fa-ae1c-7360289b532c",
-      "text": "ge6",
-      "completed": false,
-      "edit": false
-    },
-    {
-      "id": "aa2d5ead-5af2-4852-a014-aca0a8b99a62",
-      "text": "test 6",
-      "completed": false,
-      "edit": false
-    },
-    {
-      "id": "923e548c-1058-4a21-8910-f9132bedfb42",
-      "text": "test 78",
       "completed": false,
       "edit": false
     }
@@ -158,6 +37,23 @@
       "id": 4,
       "user_ID": 4,
       "description": "For having muitiple Ruter an  Pages ...."
+    }
+  ],
+  "books": [
+    {
+      "title": "Harry Potter phenix house",
+      "author": "jk roiling",
+      "id": "d5fE_asz"
+    },
+    {
+      "title": "harry potter person of azkaban ",
+      "author": "jk roiling",
+      "id": "n0CCBZj"
+    },
+    {
+      "title": "Harry potter and deathly hollows part 1",
+      "author": "jk roiling",
+      "id": "cj8rlwe"
     }
   ]
 }

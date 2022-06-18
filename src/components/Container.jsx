@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { base } from "../constant/theme";
 import { css } from "styled-components";
 const Container = ({ maxWidth = "xl", children, center = true, ...rest }) => {
   return (
@@ -13,17 +12,17 @@ const Container = ({ maxWidth = "xl", children, center = true, ...rest }) => {
 export default Container;
 
 const Box = styled.div`
-  max-width: ${({ maxWidth }) =>
+  max-width: ${({ maxWidth, theme }) =>
     maxWidth === "2xl"
-      ? base.breakpoints.xll
+      ? theme.breakpoints.xll
       : maxWidth === "xl"
-      ? base.breakpoints.xl
+      ? theme.breakpoints.xl
       : maxWidth === "lg"
-      ? base.breakpoints.lg
+      ? theme.breakpoints.lg
       : maxWidth === "md"
-      ? base.breakpoints.md
+      ? theme.breakpoints.md
       : maxWidth === "sm"
-      ? base.breakpoints.sm
+      ? theme.breakpoints.sm
       : "1280px"};
   padding-left: 15px;
   padding-right: 15px;

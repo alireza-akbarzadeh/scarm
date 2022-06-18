@@ -14,6 +14,9 @@ const Row = ({
 }) => {
   return (
     <Flex
+      justify={justify}
+      style={style}
+      flexWrap={flexWrap}
       className={className}
       space={space}
       alignItems={alignItems}

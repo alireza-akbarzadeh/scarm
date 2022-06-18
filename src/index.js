@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import { QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 import queryClient from "./queryClient";
-
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

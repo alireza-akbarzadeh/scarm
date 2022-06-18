@@ -8,28 +8,24 @@ const Input = ({
   dir = "ltr",
   icon,
   inputClassName,
-  type,
   label,
-  customeTextError,
+  customTextError,
   isError = false,
-  ...rest
+  ...register
 }) => {
   return (
     <FormControl dir={dir} style={style} className={className}>
       <BaseInput
+        {...register}
         isError={isError}
         label={label}
         style={inputStyle}
         className={inputClassName}
-        type={type}
-        {...rest}
       />
       <label className={"label_Handler"} />
       <span className={"Icon_Handler"}>{icon && icon}</span>
       {isError && (
-        <Error>
-          {customeTextError ? customeTextError : "Field Is Required"}
-        </Error>
+        <Error>{customTextError ? customTextError : "Field Is Required"}</Error>
       )}
     </FormControl>
   );
@@ -52,12 +48,12 @@ const FormControl = styled.div`
     ${({ dir }) =>
       dir === "ltr"
         ? css`
-            right: 0;
+            right: -10px;
             transform: translate(14px, -10px);
             top: 50%;
           `
         : css`
-            left: 0;
+            left: -10px;
             top: 50%;
             transform: translateX(14px, -10px);
           `};
@@ -100,7 +96,7 @@ const BaseInput = styled.input`
   padding: 0 15px;
   background-color: transparent;
   font-size: 16px;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: ${({ theme }) => theme.body};
   font-weight: 600;
   transition: all 0.3 ease-in-out;
@@ -141,7 +137,6 @@ const BaseInput = styled.input`
 `;
 
 Input.propTypes = {
-  type: PropTypes.string.isRequired,
   dir: PropTypes.string,
   icon: PropTypes.any,
   isError: PropTypes.bool,
@@ -149,6 +144,6 @@ Input.propTypes = {
   label: PropTypes.string,
   className: PropTypes.string,
   inputStyle: PropTypes.string,
-  customeTextError: PropTypes.string,
+  customTextError: PropTypes.string,
   inputClassName: PropTypes.string,
 };
